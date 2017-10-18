@@ -1,5 +1,5 @@
 module.exports = function run() {
-    setTimeout(function () {
-        console.log('lib show log');
-    }, 3000);
+    return new Promise(function (resolve) {
+        resolve('lib resolve');
+    })
 };
